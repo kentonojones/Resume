@@ -37,7 +37,7 @@
         @media print {
             body {
                 background-color: white !important;
-                font-size: 10pt;
+                font-size: 9pt;
                 -webkit-print-color-adjust: exact;
             }
             .bg-gray-100 {
@@ -62,28 +62,58 @@
                 box-shadow: none !important;
                 background-color: transparent !important;
                 padding: 0 !important;
-                margin: 0 0 1.5rem 0 !important;
+                margin: 0 0 1rem 0 !important;
             }
              .experience-item {
-                margin-bottom: 1.5rem !important;
+                margin-bottom: 1rem !important;
                 page-break-inside: avoid;
-            }
-            section {
-                page-break-inside: avoid;
-            }
-            .mb-10 {
-                margin-bottom: 2rem !important;
             }
             .pt-4 {
                 padding-top: 1rem !important;
             }
+            .md\:p-12 {
+                padding: 0 1.5rem !important;
+            }
+            .p-8 {
+                padding: 1rem !important;
+            }
+             /* Force text colors for readability */
+            * {
+                color: #000 !important;
+            }
+            .bg-emerald-800 {
+                background-color: #065f46 !important; /* Keep the green sidebar */
+            }
+            /* Keep sidebar text white */
+            aside, aside h1, aside h2, aside h3, aside p, aside li, aside td, aside a {
+                color: #fff !important;
+            }
+            aside .text-green-300 {
+                color: #86efac !important;
+            }
+             aside .bg-clip-text {
+                background-image: none !important;
+            }
+            aside .border-green-400 {
+                border-color: #4ade80 !important;
+            }
+             aside .border-emerald-700 {
+                border-color: #047857 !important;
+            }
 
-            h1 { font-size: 26pt !important; }
-            h2 { font-size: 15pt !important; }
-            h3 { font-size: 13pt !important; }
-            h4 { font-size: 12pt !important; }
-            .text-sm { font-size: 9.5pt !important; }
-            .leading-relaxed { line-height: 1.5 !important; }
+            section {
+                page-break-inside: avoid;
+            }
+            .mb-10 {
+                margin-bottom: 1.5rem !important;
+            }
+
+            h1 { font-size: 24pt !important; line-height: 1.1; margin-bottom: 0.25rem !important;}
+            h2 { font-size: 14pt !important; margin-bottom: 1.5rem !important; }
+            h3 { font-size: 11pt !important; padding-bottom: 0.25rem !important; margin-bottom: 0.75rem !important;}
+            h4 { font-size: 10pt !important; }
+            ul, .leading-relaxed { font-size: 9pt !important; line-height: 1.4 !important; }
+            .text-sm { font-size: 9pt !important; }
 
             @page {
                 size: letter;
