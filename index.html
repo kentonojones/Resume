@@ -36,52 +36,64 @@
         /* Print-specific styles */
         @media print {
             body {
+                background-color: white !important;
                 -webkit-print-color-adjust: exact;
-                background-color: white;
             }
 
             .main-container {
-                box-shadow: none;
-                border: none;
-                max-width: 100%;
+                box-shadow: none !important;
+                border: none !important;
+                max-width: 100% !important;
             }
             
             .md\:flex-row {
-                flex-direction: column;
+                flex-direction: column !important;
             }
 
             .md\:w-1\/3, .md\:w-2\/3 {
-                width: 100%;
+                width: 100% !important;
+            }
+            
+            .p-8 {
+                padding: 0 !important;
+            }
+            
+            .md\:p-12 {
+                padding: 2rem 0 0 0 !important;
             }
 
             .sticky {
-                position: static;
+                position: static !important;
             }
 
             .bg-emerald-800 {
                 background-color: white !important;
             }
-            .text-white, .text-gray-300, .text-gray-400, .text-green-300 {
+            
+            .text-white, .text-gray-300, .text-gray-400, .text-green-300, .text-green-200, .text-gray-600 {
                 color: black !important;
             }
+
             .bg-clip-text {
                 color: black !important;
-                background-image: none;
+                background-image: none !important;
             }
-            .border-green-400, .border-emerald-700 {
+
+            .border-green-400, .border-emerald-700, .border-gray-300 {
                 border-color: #ccc !important;
             }
 
             .experience-item:hover {
-                transform: none;
-                box-shadow: none;
-                background-color: transparent;
-                padding: 0;
-                margin: 0 0 2rem 0;
+                transform: none !important;
+                box-shadow: none !important;
+                background-color: transparent !important;
+                padding: 0 !important;
+                margin: 0 0 2rem 0 !important;
             }
+            
             .experience-item {
-                 padding: 0;
-                 margin: 0 0 2rem 0;
+                 padding: 0 !important;
+                 margin: 0 0 2rem 0 !important;
             }
             
             section {
