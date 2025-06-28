@@ -32,6 +32,21 @@
             padding: 0 1rem 1rem 1rem;
             margin: 0 -1rem 1rem -1rem;
         }
+
+        /* Print-specific styles to fix font color */
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+            }
+            /* Force main text to be black for readability */
+            .text-gray-800, .text-gray-700, .text-gray-600, .text-gray-500 {
+                color: #000 !important;
+            }
+            /* Ensure icons print in a dark color */
+            .fa-user-tie, .fa-briefcase {
+                 color: #000 !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-gray-100 flex items-center justify-center p-4 sm:p-8">
