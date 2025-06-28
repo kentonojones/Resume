@@ -73,10 +73,28 @@
                  margin-bottom: 1rem !important;
             }
 
-            /* --- Maintain Colors for Print --- */
+            /* --- Fix Colors for Print --- */
             * {
                 -webkit-print-color-adjust: exact;
                 color-adjust: exact;
+            }
+            aside.bg-emerald-800 {
+                background-color: white !important;
+            }
+            aside *, main * {
+                color: #000 !important;
+            }
+            aside .bg-clip-text {
+                background-image: none !important;
+            }
+            aside .border-green-400 {
+                border-color: #000 !important;
+            }
+            main .border-gray-300 {
+                border-color: #000 !important;
+            }
+             aside .border-emerald-700 {
+                border-color: #ccc !important;
             }
 
             /* --- Tighten Spacing for Print --- */
